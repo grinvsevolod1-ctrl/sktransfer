@@ -77,8 +77,8 @@ export function TestimonialsSection({ locale }: TestimonialsSectionProps) {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fadeIn">
-            <h2 className="text-5xl md:text-6xl font-display font-bold mb-6 gold-gradient-text">{t[locale].title}</h2>
-            <p className="text-xl text-foreground/70 max-w-3xl mx-auto leading-relaxed">{t[locale].subtitle}</p>
+            <h2 className="text-5xl md:text-6xl font-display font-bold mb-6 gold-gradient-text text-muted">{t[locale].title}</h2>
+            <p className="text-xl max-w-3xl mx-auto leading-relaxed text-muted">{t[locale].subtitle}</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
