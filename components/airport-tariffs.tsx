@@ -68,6 +68,12 @@ export function AirportTariffs({ locale }: AirportTariffsProps) {
             <p className="text-xs sm:text-sm text-black mt-1">{t.calculator.airportSubtitle}</p>
           </div>
         </div>
+        {/* Вторая карточка */}
+        <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+          <p className="text-xs sm:text-sm text-blue-900 text-center break-words">
+            Саня вот этот текст поменяй
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
           {Object.entries(AIRPORT_TARIFFS).map(([key, tariff]) => {
             const tariffKey = key as keyof typeof AIRPORT_TARIFFS
