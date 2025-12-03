@@ -61,9 +61,9 @@ export function MobileMenuModal({ open, onClose, locale, onLocaleChange, onConta
             >
               <defs>
                 <linearGradient id="goldGradientMenu" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style={{ stopColor: "#f4e5b0", stopOpacity: 1 }} />
-                  <stop offset="50%" style={{ stopColor: "#d4af37", stopOpacity: 1 }} />
-                  <stop offset="100%" style={{ stopColor: "#c5a028", stopOpacity: 1 }} />
+                  <stop offset="0%" style={{ stopColor: "#ffffff", stopOpacity: 1 }} />
+                  <stop offset="50%" style={{ stopColor: "#f0f0f0", stopOpacity: 1 }} />
+                  <stop offset="100%" style={{ stopColor: "#e0e0e0", stopOpacity: 1 }} />
                 </linearGradient>
                 <filter id="glowMenu">
                   <feGaussianBlur stdDeviation="3" result="coloredBlur" />
