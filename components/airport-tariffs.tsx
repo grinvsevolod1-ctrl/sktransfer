@@ -62,10 +62,10 @@ export function AirportTariffs({ locale }: AirportTariffsProps) {
             <Plane className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--gold)]" />
           </div>
           <div className="min-w-0 flex-1">
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 truncate">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-black truncate">
               {t.calculator.airportTitle}
             </h3>
-            <p className="text-xs sm:text-sm text-gray-700 mt-1">{t.calculator.airportSubtitle}</p>
+            <p className="text-xs sm:text-sm text-black mt-1">{t.calculator.airportSubtitle}</p>
           </div>
         </div>
 
@@ -87,7 +87,7 @@ export function AirportTariffs({ locale }: AirportTariffsProps) {
                   {tariff.features.map((feature, idx) => (
                     <div key={idx} className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                      <span className="text-xs sm:text-sm text-gray-700 break-words">{feature}</span>
+                      <span className="text-xs sm:text-sm text-black break-words">{feature}</span>
                     </div>
                   ))}
                 </div>
@@ -96,16 +96,16 @@ export function AirportTariffs({ locale }: AirportTariffsProps) {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2 min-w-0 flex-1">
                       <ArrowRight className="w-4 h-4 text-[var(--gold)] flex-shrink-0" />
-                      <span className="text-sm text-gray-700 truncate">{t.calculator.fromAirport}</span>
+                      <span className="text-sm text-black truncate">{t.calculator.fromAirport}</span>
                     </div>
-                    <span className="font-bold text-lg text-gray-900 flex-shrink-0 ml-2">{tariff.from} BYN</span>
+                    <span className="font-bold text-lg text-black flex-shrink-0 ml-2">{tariff.from} BYN</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2 min-w-0 flex-1">
                       <ArrowRight className="w-4 h-4 text-[var(--gold)] flex-shrink-0" />
-                      <span className="text-sm text-gray-700 truncate">{t.calculator.toAirport}</span>
+                      <span className="text-sm text-black truncate">{t.calculator.toAirport}</span>
                     </div>
-                    <span className="font-bold text-lg text-gray-900 flex-shrink-0 ml-2">{tariff.to} BYN</span>
+                    <span className="font-bold text-lg text-black flex-shrink-0 ml-2">{tariff.to} BYN</span>
                   </div>
                 </div>
 
