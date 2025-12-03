@@ -56,7 +56,7 @@ export function MobileMenuModal({ open, onClose, locale, onLocaleChange, onConta
             {/* Updated logo without PREMIUM SERVICE */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 180 80"
+              viewBox="0 0 180 60"
               className="w-auto drop-shadow-[0_0_15px_rgba(244,229,176,0.3)] mx-6 px-0 h-14"
             >
               <defs>
