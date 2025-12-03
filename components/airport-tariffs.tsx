@@ -68,6 +68,16 @@ export function AirportTariffs({ locale }: AirportTariffsProps) {
             <p className="text-xs sm:text-sm text-black mt-1">{t.calculator.airportSubtitle}</p>
           </div>
         </div>
+        <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+          <p className="text-xs sm:text-sm text-blue-900 text-center break-words">
+            {locale === "ru"
+              ? "⏰ Встреча с табличкой в зале прилета • 🧳 Помощь с багажом • 📱 Отслеживание рейса"
+              : locale === "en"
+                ? "⏰ Meet & greet with sign • 🧳 Luggage assistance • 📱 Flight tracking"
+                : "⏰ 接机服务 • 🧳 行李协助 • 📱 航班跟踪"}
+          </p>
+        </div>
+      </Card>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
           {Object.entries(AIRPORT_TARIFFS).map(([key, tariff]) => {
