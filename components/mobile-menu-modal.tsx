@@ -74,8 +74,8 @@ export function MobileMenuModal({ open, onClose, locale, onLocaleChange, onConta
                 </filter>
               </defs>
               <text className=""
-                x="90"
-                y="28"
+                x="100"
+                y="38"
                 fontFamily="'Times New Roman', serif"
                 fontSize="42"
                 fontWeight="bold"
