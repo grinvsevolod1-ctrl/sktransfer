@@ -61,12 +61,6 @@ export function AirportTariffs({ locale }: AirportTariffsProps) {
           <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[var(--gold)]/10 flex items-center justify-center flex-shrink-0">
             <Plane className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--gold)]" />
           </div>
-          {/* Вторая карточка */}
-        <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
-          <p className="text-xs sm:text-sm text-blue-900 text-center break-words">
-            Саня вот этот текст поменяй
-          </p>
-        </div>
           <div className="min-w-0 flex-1">
             <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-black truncate">
               {t.calculator.airportTitle}
