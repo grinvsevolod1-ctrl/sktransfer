@@ -56,14 +56,14 @@ export function MobileMenuModal({ open, onClose, locale, onLocaleChange, onConta
             {/* Updated logo without PREMIUM SERVICE */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 180 60"
+              viewBox="0 0 200 70"
               className="w-auto drop-shadow-[0_0_15px_rgba(244,229,176,0.3)] mx-6 px-0 h-14"
             >
               <defs>
                 <linearGradient id="goldGradientMenu" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" style={{ stopColor: "#ffffff", stopOpacity: 1 }} />
-                  <stop offset="50%" style={{ stopColor: "#f0f0f0", stopOpacity: 1 }} />
-                  <stop offset="100%" style={{ stopColor: "#e0e0e0", stopOpacity: 1 }} />
+                  <stop offset="50%" style={{ stopColor: "#f5f5f5", stopOpacity: 1 }} />
+                  <stop offset="100%" style={{ stopColor: "#e8e8e8", stopOpacity: 1 }} />
                 </linearGradient>
                 <filter id="glowMenu">
                   <feGaussianBlur stdDeviation="3" result="coloredBlur" />
