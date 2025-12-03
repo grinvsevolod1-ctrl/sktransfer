@@ -79,20 +79,20 @@ export function MobileMenuModal({ open, onClose, locale, onLocaleChange, onConta
                 fontFamily="'Times New Roman', serif"
                 fontSize="42"
                 fontWeight="bold"
-                fill="url(#goldGradientMenu)"
+                fill="url(#whiteGradient)"
                 textAnchor="middle"
                 filter="url(#glowMenu)"
               >
                 SK
               </text>
               <text
-                x="90"
-                y="50"
+                x="100"
+                y="58"
                 fontFamily="'Times New Roman', serif"
-                fontSize="16"
+                fontSize="14"
                 fontWeight="normal"
-                fill="url(#goldGradientMenu)"
-                letterSpacing="4"
+                fill="url(#whiteGradient)"
+                letterSpacing="3"
                 textAnchor="middle"
               >
                 TRANSFER
