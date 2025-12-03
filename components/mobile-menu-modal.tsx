@@ -52,14 +52,7 @@ export function MobileMenuModal({ open, onClose, locale, onLocaleChange, onConta
       <div className="absolute inset-0 dark-gradient overflow-y-auto">
         <div className="container mx-auto px-4 py-6">
           {/* Header */}
-          {/* Центрированный логотип */}
-      <div className="flex justify-center mb-6">
-         <svg ... />
-         </div>
-         {/* Кнопка закрытия — справа сверху */}
-       <div className="absolute top-4 right-4">
-            <Button ... />
-            </div>
+         <div className="flex items-right-4 justify-center mb-8"> 
             {/* Updated logo without PREMIUM SERVICE */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
