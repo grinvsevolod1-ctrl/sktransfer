@@ -80,7 +80,7 @@ export function AirportTariffs({ locale }: AirportTariffsProps) {
                 className="p-4 sm:p-5 bg-gradient-to-br from-white to-gray-50 border border-[var(--gold)]/20 hover:border-[var(--gold)]/40 transition-colors bg-muted"
               >
                 <div className="flex items-start justify-between mb-3">
-                  <h4 className="text-base sm:text-lg font-bold text-[var(--gold)] break-words pr-2">{tariffName}</h4>
+                  <h4 className="text-base sm:text-lg font-bold text-black break-words pr-2">{tariffName}</h4>
                 </div>
 
                 <div className="space-y-2 mb-4">
