@@ -16,7 +16,7 @@ const excursionsData = {
     },
     duration: { ru: "3 часа", en: "3 hours", zh: "3小时" },
     groupSize: { ru: "до 15 человек", en: "up to 15 people", zh: "最多15人" },
-    price: { ru: "стоимость по согласованию", en: "price by agreement", zh: "价格协商" },
+    price: { ru: " по согласованию", en: " by agreement", zh: "价格协商" },
     images: [
       "/minsk-city-tour-architecture.jpg",
       "/minsk-independence-avenue.jpg",
@@ -62,7 +62,7 @@ const excursionsData = {
     },
     duration: { ru: "Полный день", en: "Full day", zh: "全天" },
     groupSize: { ru: "до 20 человек", en: "up to 20 people", zh: "最多20人" },
-    price: { ru: "стоимость по согласованию", en: "price by agreement", zh: "价格协商" },
+    price: { ru: " по согласованию", en: " by agreement", zh: "价格协商" },
     images: [
       "/brest-fortress-memorial-belarus.jpg",
       "/brest-fortress-entrance.jpg",
@@ -101,7 +101,7 @@ const excursionsData = {
     },
     duration: { ru: "Полный день", en: "Full day", zh: "全天" },
     groupSize: { ru: "до 15 человек", en: "up to 15 people", zh: "最多15人" },
-    price: { ru: "стоимость по согласованию", en: "price by agreement", zh: "价格协商" },
+    price: { ru: " по согласованию", en: " by agreement", zh: "价格协商" },
     images: [
       "/nesvizh-castle-belarus-unesco.jpg",
       "/mir-castle-belarus.jpg",
@@ -147,7 +147,7 @@ const excursionsData = {
     },
     duration: { ru: "4-5 часов", en: "4-5 hours", zh: "4-5小时" },
     groupSize: { ru: "до 20 человек", en: "up to 20 people", zh: "最多20人" },
-    price: { ru: "стоимость по согласованию", en: "price by agreement", zh: "价格协商" },
+    price: { ru: " по согласованию", en: " by agreement", zh: "价格协商" },
     images: [
       "/khatyn-memorial-belarus.jpg",
       "/khatyn-eternal-flame.jpg",
@@ -193,7 +193,7 @@ const excursionsData = {
     },
     duration: { ru: "4-5 часов", en: "4-5 hours", zh: "4-5小时" },
     groupSize: { ru: "до 15 человек", en: "up to 15 people", zh: "最多15人" },
-    price: { ru: "стоимость по согласованию", en: "price by agreement", zh: "价格协商" },
+    price: { ru: " по согласованию", en: " by agreement", zh: "价格协商" },
     images: [
       "/dudutki-museum-belarus-crafts.jpg",
       "/dudutki-windmill.jpg",
@@ -239,7 +239,7 @@ const excursionsData = {
     },
     duration: { ru: "Полный день", en: "Full day", zh: "全天" },
     groupSize: { ru: "до 15 человек", en: "up to 15 people", zh: "最多15人" },
-    price: { ru: "стоимость по согласованию", en: "price by agreement", zh: "价格协商" },
+    price: { ru: " по согласованию", en: " by agreement", zh: "价格协商" },
     images: [
       "/belovezhskaya-pushcha-forest.jpg",
       "/belovezhskaya-pushcha-bison.jpg",
