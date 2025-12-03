@@ -62,7 +62,7 @@ export function AirportTariffs({ locale }: AirportTariffsProps) {
             <Plane className="w-5 h-5 sm:w-6 sm:h-6 text-[var(--gold)]" />
           </div>
           <div className="min-w-0 flex-1">
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-black truncate">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-700 truncate">
               {t.calculator.airportTitle}
             </h3>
             <p className="text-xs sm:text-sm text-black mt-1">{t.calculator.airportSubtitle}</p>
