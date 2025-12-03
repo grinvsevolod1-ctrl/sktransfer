@@ -214,7 +214,7 @@ export function MobileMenuModal({ open, onClose, locale, onLocaleChange, onConta
 
           {/* Updated Footer */}
           <div className="mt-8 pt-6 border-t border-white/10 text-center">
-            <p className="text-xs text-white/60">© 2008-2024 SK Transfer. {t.footer.rights}</p>
+            <p className="text-xs text-white/60">© 2008-2025 SK Transfer. {t.footer.rights}</p>
             <p className="text-xs text-white/60 mt-1">
               Designed And Developed by{" "}
               <a
