@@ -121,6 +121,7 @@ export function AirportTariffs({ locale }: AirportTariffsProps) {
           })}
         </div>
 
+        {/* Первая карточка */}
         <div className="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
           <p className="text-xs sm:text-sm text-blue-900 text-center break-words">
             {locale === "ru"
@@ -128,6 +129,13 @@ export function AirportTariffs({ locale }: AirportTariffsProps) {
               : locale === "en"
                 ? "⏰ Meet & greet with sign • 🧳 Luggage assistance • 📱 Flight tracking"
                 : "⏰ 接机服务 • 🧳 行李协助 • 📱 航班跟踪"}
+          </p>
+        </div>
+
+        {/* Вторая карточка */}
+        <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+          <p className="text-xs sm:text-sm text-blue-900 text-center break-words">
+            Саня вот этот текст поменяй
           </p>
         </div>
       </Card>
