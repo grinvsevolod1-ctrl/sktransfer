@@ -134,8 +134,8 @@ export function AirportTariffs({ locale }: AirportTariffsProps) {
 
         {/* Вторая карточка */}
         <div className="mt-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
-          <p className="text-xs sm:text-sm text-blue-900 text-center break-words">
-            Саня вот этот текст поменяй
+          <p className="text-xs sm:text-sm text-black text-center break-words">
+            Цены ориенторовочные. Окончательную стоимость уточняйте у менеджера! 
           </p>
         </div>
       </Card>
