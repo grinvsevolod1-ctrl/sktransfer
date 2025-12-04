@@ -90,12 +90,14 @@ export function FleetSection({ locale }: FleetSectionProps) {
               </div>
             </div>
 
-            <div className="relative overflow-hidden">
-              <img
-                src={vehicle.image || "/placeholder.svg"}
-                alt={vehicle.model}
-                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
-              />
+            <div className="relative overflow-hidden h-52 sm:h-64 md:h-72 lg:h-80">
+               <img
+               src={vehicle.image || "/placeholder.svg"}
+               alt={vehicle.model}
+               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+           />
+          </div>
+
 
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <div className="absolute top-0 -left-full h-full w-1/2 bg-gradient-to-r from-transparent via-[var(--gold)]/20 to-transparent skew-x-12 group-hover:left-full transition-all duration-1000" />
