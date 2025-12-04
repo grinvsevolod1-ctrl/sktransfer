@@ -96,9 +96,6 @@ export function FleetSection({ locale }: FleetSectionProps) {
                alt={vehicle.model}
                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
            />
-          </div>
-
-
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <div className="absolute top-0 -left-full h-full w-1/2 bg-gradient-to-r from-transparent via-[var(--gold)]/20 to-transparent skew-x-12 group-hover:left-full transition-all duration-1000" />
               </div>
