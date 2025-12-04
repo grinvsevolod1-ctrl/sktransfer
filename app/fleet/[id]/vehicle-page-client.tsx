@@ -111,7 +111,7 @@ export default function VehiclePageClient({ vehicles }: VehiclePageProps) {
               <img
                 src={vehicle.images[currentImageIndex] || "/placeholder.svg"}
                 alt={vehicle.model}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
               />
             </div>
 
@@ -129,7 +129,7 @@ export default function VehiclePageClient({ vehicles }: VehiclePageProps) {
                   <img
                     src={img || "/placeholder.svg"}
                     alt={`${vehicle.model} ${idx + 1}`}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-conver"
                   />
                 </button>
               ))}
