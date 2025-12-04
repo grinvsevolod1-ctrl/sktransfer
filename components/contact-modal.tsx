@@ -59,7 +59,6 @@ export function ContactModal({ open, onClose, locale }: ContactModalProps) {
       href: "weixin://",
       bgColor: "bg-[#09B83E]",
       hoverColor: "hover:bg-[#09B83E]/90",
-      subtitle: "ID: SKTransfer",
     },
   ]
 
