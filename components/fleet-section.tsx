@@ -17,7 +17,7 @@ export function FleetSection({ locale }: FleetSectionProps) {
       id: "volkswagen-polo",
       category: t.tariffs.standard,
       model: "Volkswagen Polo",
-      image: "/black-volkswagen-polo-sedan-premium.jpg",
+      image: "/black-volkswagen-polo-sedan-premium.jpg2",
       passengers: 3,
       luggage: 2,
       price: "1.30",
