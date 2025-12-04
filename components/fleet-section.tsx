@@ -90,8 +90,8 @@ export function FleetSection({ locale }: FleetSectionProps) {
               </div>
             </div>
 
-            <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
-              <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent z-10" />
+            <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="absolute inset-0 via-transparent to-transparent z-10" />
 
               <img
                 src={vehicle.image || "/placeholder.svg"}
