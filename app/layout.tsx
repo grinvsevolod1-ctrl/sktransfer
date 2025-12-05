@@ -112,7 +112,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html className="" lang="locale">
+    <html className="" lang="ru">
       <head>
         <link rel="canonical" href="https://sktransfer.by" />
         <meta name="geo.region" content="BY-MI" />
