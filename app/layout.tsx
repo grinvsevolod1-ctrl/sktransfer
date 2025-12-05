@@ -124,8 +124,8 @@ export default function RootLayout({
         <ScrollToTop />
         <Header />
         <LanguageProvider defaultLanguage="ru">
-            <Suspense fallback={null}>{children}</Suspense>
-          </LanguageProvider>
+          {children}
+        </LanguageProvider>
         {children}
         <Footer />
         <Analytics />
