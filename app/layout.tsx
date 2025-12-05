@@ -120,13 +120,11 @@ export default function RootLayout({
         <meta name="ICBM" content="53.9045, 27.5615" />
       </head>
       <body className={`${ibmPlexSans.variable} ${bebasNeue.variable} font-sans antialiased`}>
-        <LocaleProvider>
         <ScrollToTop />
         <Header />
         {children}
         <Footer />
         <Analytics />
-      </LocaleProvider>
       </body>
     </html>
   )
