@@ -6,7 +6,6 @@ import { ScrollToTop } from "@/components/scroll-to-top"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import "./globals.css"
-import { LocaleProvider } from "@/context/locale-context"
 
 const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin", "cyrillic"],
