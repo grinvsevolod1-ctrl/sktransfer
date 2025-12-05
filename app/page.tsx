@@ -9,7 +9,8 @@ import { CTASection } from "@/components/cta-section"
 import { type Locale, detectLocale } from "@/lib/i18n"
 
 export default function Home() {
-  const [locale, setLocale] = useState<Locale>("ru")
+  const { locale } = useLocale()
+
 
   useEffect(() => {
     const detectedLocale = detectLocale()
