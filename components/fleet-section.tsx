@@ -62,7 +62,7 @@ export function FleetSection({ locale }: FleetSectionProps) {
       id: "mercedes-sprinter",
       category: t.tariffs.minibus,
       model: "Mercedes-Benz Sprinter",
-      image: "/black-mercedes-sprinter-luxury-minibus.jpg",
+      image: "/black-mercedes-sprinter-luxury-minibus2.jpg",
       passengers: 18,
       luggage: 15,
       price: "3.00",
