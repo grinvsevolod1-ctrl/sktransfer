@@ -1,3 +1,4 @@
+"use client"
 import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { IBM_Plex_Sans, Bebas_Neue } from "next/font/google"
