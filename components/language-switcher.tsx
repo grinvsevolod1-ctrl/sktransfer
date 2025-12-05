@@ -3,7 +3,6 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import type { Locale } from "@/lib/i18n"
 import { Globe } from "lucide-react"
-import { useLocale } from "@/context/locale-context"
 
 
 interface LanguageSwitcherProps {
