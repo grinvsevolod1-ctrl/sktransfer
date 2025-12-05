@@ -122,6 +122,9 @@ export default function RootLayout({
       <body className={`${ibmPlexSans.variable} ${bebasNeue.variable} font-sans antialiased`}>
         <ScrollToTop />
         <Header />
+        <LanguageProvider defaultLanguage="ru">
+            <Suspense fallback={null}>{children}</Suspense>
+          </LanguageProvider>
         {children}
         <Footer />
         <Analytics />
