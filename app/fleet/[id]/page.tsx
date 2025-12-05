@@ -82,7 +82,7 @@ async function getVehicles(locale: Locale): Promise<Vehicle[]> {
       category: t.tariffs.comfort,
       model: "Skoda Superb",
       images: [
-        "/black-skoda-superb-luxury-sedan.jpg",
+        "/black-skoda-superb-luxury-sedan4.jpg",
         "/black-skoda-superb-luxury-sedan1.jpg",
         "/black-skoda-superb-luxury-sedan2.jpg",
         "/black-skoda-superb-luxury-sedan3.jpg",
