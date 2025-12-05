@@ -26,7 +26,7 @@ export function FleetSection({ locale }: FleetSectionProps) {
       id: "skoda-superb",
       category: t.tariffs.comfort,
       model: "Skoda Superb",
-      image: "/black-skoda-superb-luxury-sedan.jpg",
+      image: "/black-skoda-superb-luxury-sedan1.jpg",
       passengers: 3,
       luggage: 3,
       price: "1.50",
