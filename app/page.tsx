@@ -7,7 +7,6 @@ import { ServicesSection } from "@/components/services-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { CTASection } from "@/components/cta-section"
 import { type Locale, detectLocale } from "@/lib/i18n"
-import { useLocale } from "@/context/locale-context"
 
 export default function Home() {
   const [locale, setLocale] = useState("ru")
