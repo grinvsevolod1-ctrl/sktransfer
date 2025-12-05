@@ -4,13 +4,16 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import type { Locale } from "@/lib/i18n"
 import { Globe } from "lucide-react"
+import { useLocale } from "@/context/locale-context"
+
 
 interface LanguageSwitcherProps {
   currentLocale: Locale
   onLocaleChange: (locale: Locale) => void
 }
 
-export function LanguageSwitcher({ currentLocale, onLocaleChange }: LanguageSwitcherProps) {
+export function LanguageSwitcher() {
+  const { locale, setLocale } = useLocale()
   const [isOpen, setIsOpen] = useState(false)
 
   const languages: { code: Locale; name: string; nativeName: string }[] = [
