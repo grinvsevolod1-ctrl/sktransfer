@@ -10,7 +10,8 @@ import { type Locale, detectLocale } from "@/lib/i18n"
 import { useLocale } from "@/context/locale-context"
 
 export default function Home() {
-  const { locale } = useLocale()
+  const [locale, setLocale] = useState("ru")
+
 
 
   useEffect(() => {
