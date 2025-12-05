@@ -35,7 +35,7 @@ export function FleetSection({ locale }: FleetSectionProps) {
       id: "mercedes-e-class",
       category: t.tariffs.business,
       model: "Mercedes-Benz E-Class",
-      image: "/black-mercedes-e-class-luxury-sedan.jpg",
+      image: "/black-mercedes-e-class-luxury-sedan2.jpg",
       passengers: 3,
       luggage: 2,
       price: "3.00",
