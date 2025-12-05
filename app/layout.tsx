@@ -6,7 +6,6 @@ import { ScrollToTop } from "@/components/scroll-to-top"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import "./globals.css"
-import { LanguageProvider } from "@/components/language-provider"
 
 const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin", "cyrillic"],
@@ -123,9 +122,6 @@ export default function RootLayout({
       <body className={`${ibmPlexSans.variable} ${bebasNeue.variable} font-sans antialiased`}>
         <ScrollToTop />
         <Header />
-        <LanguageProvider defaultLanguage="ru">
-          {children}
-        </LanguageProvider>
         {children}
         <Footer />
         <Analytics />
