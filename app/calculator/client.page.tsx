@@ -1,25 +1,13 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { type Locale, detectLocale, translations } from "@/lib/i18n"
+import { useLanguage } from "@/lib/language-context"
+import { translations } from "@/lib/i18n"
 import { CalculatorForm } from "@/components/calculator-form"
 import { AirportTariffs } from "@/components/airport-tariffs"
 
 export default function CalculatorPageClient() {
-  const [mounted, setMounted] = useState(false)
-  const [locale, setLocale] = useState<Locale>("ru")
-
-  useEffect(() => {
-    setMounted(true)
-    const detectedLocale = detectLocale()
-    setLocale(detectedLocale)
-  }, [])
-
-  if (!mounted) {
-    return null
-  }
-
-  const t = translations[locale]
+  const { language } = useLanguage()
+  const t = translations[language]
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-amber-50/30 to-white">
@@ -47,8 +35,8 @@ export default function CalculatorPageClient() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-              <CalculatorForm locale={locale} />
-              <AirportTariffs locale={locale} />
+              <CalculatorForm locale={language} />
+              <AirportTariffs locale={language} />
             </div>
           </div>
         </div>
