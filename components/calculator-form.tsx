@@ -76,10 +76,10 @@ export function CalculatorForm({ locale }: CalculatorFormProps) {
               <Calculator className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
             <div className="min-w-0">
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold gold-gradient-text truncate">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold gold-gradient-text break-words whitespace-normal">
                 {t.calculator.title}
               </h3>
-              <p className="text-xs sm:text-sm text-muted-foreground truncate">{t.calculator.subtitle}</p>
+              <p className="text-xs sm:text-sm text-muted-foreground break-words whitespace-normal">{t.calculator.subtitle}</p>
             </div>
           </div>
 
