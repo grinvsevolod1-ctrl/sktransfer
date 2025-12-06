@@ -6,8 +6,8 @@ import { CalculatorForm } from "@/components/calculator-form"
 import { AirportTariffs } from "@/components/airport-tariffs"
 
 export default function CalculatorPageClient() {
-  const { language } = useLanguage()
-  const t = translations[language]
+  const { locale } = useLanguage()
+  const t = translations[locale]
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-amber-50/30 to-white">
@@ -35,8 +35,8 @@ export default function CalculatorPageClient() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-              <CalculatorForm locale={language} />
-              <AirportTariffs locale={language} />
+              <CalculatorForm locale={locale} />
+              <AirportTariffs locale={locale} />
             </div>
           </div>
         </div>
