@@ -95,7 +95,7 @@ export default function VehiclePageClient({ vehicles }: VehiclePageProps) {
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16">
           <div className="space-y-4 sm:space-y-6">
-            <div className="relative min-h-[300px] max-h-[450px] rounded-2xl overflow-hidden border-2 border-[var(--gold)]/30 shadow-2xl bg-gray-50">
+            <div className="relative min-h-[300px] max-h-[420px] rounded-2xl overflow-hidden border-2 border-[var(--gold)]/30 shadow-2xl bg-gray-50">
               <div className="absolute top-4 left-4 z-20">
                 <div className="backdrop-blur-md bg-[var(--gold)]/20 border border-[var(--gold)]/30 rounded-full px-5 py-2">
                   <span className="text-sm tracking-wider text-[var(--gold-dark)] uppercase font-bold">
