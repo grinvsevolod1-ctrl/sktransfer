@@ -1,32 +1,12 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import { type Locale, translations, detectLocale } from "@/lib/i18n"
+import { useLanguage } from "@/lib/language-context"
+import { translations } from "@/lib/i18n"
 import { Phone, Mail, Send, MessageCircle } from "lucide-react"
 import Link from "next/link"
 
 export function Footer() {
-  const [locale, setLocale] = useState<Locale>("ru")
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setLocale(detectLocale())
-    setMounted(true)
-  }, [])
-
-  if (!mounted) {
-    return (
-      <footer className="relative bg-gradient-to-b from-amber-50/50 to-white border-t border-[var(--gold)]/20">
-        <div className="container mx-auto px-4 py-16">
-          <div className="animate-pulse space-y-4">
-            <div className="h-20 w-40 bg-gray-200 rounded" />
-            <div className="h-4 w-full max-w-md bg-gray-200 rounded" />
-          </div>
-        </div>
-      </footer>
-    )
-  }
-
+  const { locale } = useLanguage()
   const t = translations[locale]
   const currentYear = new Date().getFullYear()
 
