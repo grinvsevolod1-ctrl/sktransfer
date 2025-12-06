@@ -3,15 +3,12 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import type { Locale } from "@/lib/i18n"
 import { Globe } from "lucide-react"
+import { useLanguage } from "@/lib/language-context"
 
-
-interface LanguageSwitcherProps {
-  currentLocale: Locale
-  onLocaleChange: (locale: Locale) => void
-}
+type LanguageSwitcherProps = {}
 
 export function LanguageSwitcher() {
-  const { locale, setLocale } = useLocale()
+  const { locale, setLocale } = useLanguage()
   const [isOpen, setIsOpen] = useState(false)
 
   const languages: { code: Locale; name: string; nativeName: string }[] = [
@@ -20,7 +17,7 @@ export function LanguageSwitcher() {
     { code: "zh", name: "Chinese", nativeName: "中文" },
   ]
 
-  const currentLanguage = languages.find((lang) => lang.code === currentLocale)
+  const currentLanguage = languages.find((lang) => lang.code === locale)
 
   return (
     <div className="relative">
@@ -42,11 +39,11 @@ export function LanguageSwitcher() {
               <button
                 key={lang.code}
                 onClick={() => {
-                  onLocaleChange(lang.code)
+                  setLocale(lang.code)
                   setIsOpen(false)
                 }}
                 className={`w-full px-4 py-3 text-left hover:bg-accent transition-colors ${
-                  currentLocale === lang.code ? "bg-accent font-medium" : ""
+                  locale === lang.code ? "bg-accent font-medium" : ""
                 }`}
               >
                 <div className="flex flex-col">
