@@ -227,7 +227,7 @@ async function getVehicles(locale: Locale): Promise<Vehicle[]> {
               : "独家内饰，Burmester音响，香槟和水",
         description:
           locale === "ru"
-            ? "Максимальный уровень комфорта и престижа. VIP-класс для особых случаев. Роскошь в каждой детали."
+            ? "Ма��симальный уровень комфорта и престижа. VIP-класс для особых случаев. Роскошь в каждой детали."
             : locale === "en"
               ? "Maximum level of comfort and prestige. VIP class for special occasions. Luxury in every detail."
               : "最高级别的舒适和声望。特殊场合的VIP级别。每个细节都充满奢华。",
