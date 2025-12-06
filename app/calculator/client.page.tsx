@@ -10,7 +10,7 @@ export default function CalculatorPageClient() {
   const t = translations[locale]
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white via-amber-50/30 to-white">
+    <main className="pt-20 sm:pt-24 min-h-screen bg-gradient-to-b from-white via-amber-50/30 to-white">
       <div className="relative py-12 sm:py-16 md:py-24 lg:py-32 overflow-hidden">
         <div
           className="absolute inset-0 z-0"
