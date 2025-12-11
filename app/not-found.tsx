@@ -10,7 +10,16 @@ export default function NotFound() {
   useEffect(() => {
     setIsVisible(true)
   }, [])
+  
+const handleLinkClick = () => {
+    onClose()
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
 
+  const handleContactClick = () => {
+    onClose()
+    onContactClick()
+  }
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-black">
       {/* Animated background lines */}
