@@ -100,16 +100,15 @@ export default function NotFound() {
                 <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
               </Link>
             </Button>
+            {/* Updated Quick Actions */}
+          <div className="space-y-3 mb-8">
             <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-2 border-gold px-8 py-6 text-lg font-semibold text-gold transition-all hover:bg-gold/10 hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] bg-transparent"
+              onClick={handleContactClick}
+              className="w-full gold-gradient font-semibold h-12 text-base shadow-lg shadow-[var(--gold)]/30 hover:shadow-xl hover:shadow-[var(--gold)]/40 transition-all text-muted"
             >
-              <Link href="/contact">Связаться с нами</Link>
+              <Sparkles className="h-5 w-5 mr-2" />
+              {t.nav.contacts}
             </Button>
-          </div>
-        </div>
 
         {/* Decorative road line */}
         <div
