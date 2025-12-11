@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
+import { Sparkles } from "lucide-react"
 
 export default function NotFound() {
   const [isVisible, setIsVisible] = useState(false)
@@ -10,16 +11,7 @@ export default function NotFound() {
   useEffect(() => {
     setIsVisible(true)
   }, [])
-  
-const handleLinkClick = () => {
-    onClose()
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  }
 
-  const handleContactClick = () => {
-    onClose()
-    onContactClick()
-  }
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-black">
       {/* Animated background lines */}
@@ -109,15 +101,19 @@ const handleLinkClick = () => {
                 <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
               </Link>
             </Button>
-            {/* Updated Quick Actions */}
-          <div className="space-y-3 mb-8">
+
             <Button
-              onClick={handleContactClick}
-              className="w-full gold-gradient font-semibold h-12 text-base shadow-lg shadow-[var(--gold)]/30 hover:shadow-xl hover:shadow-[var(--gold)]/40 transition-all text-muted"
+              asChild
+              size="lg"
+              className="gold-gradient font-semibold shadow-lg shadow-[var(--gold)]/30 hover:shadow-xl hover:shadow-[var(--gold)]/40 transition-all"
             >
-              <Sparkles className="h-5 w-5 mr-2" />
-              {t.nav.contacts}
+              <Link href="/contacts">
+                <Sparkles className="h-5 w-5 mr-2" />
+                Контакты
+              </Link>
             </Button>
+          </div>
+        </div>
 
         {/* Decorative road line */}
         <div
