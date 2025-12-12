@@ -7,16 +7,13 @@
   /* Premium gold and black theme for sktransfer.by */
   --background: oklch(0.05 0 0);
   --foreground: oklch(0.98 0 0);
-  /* Making card backgrounds transparent with glass effect */
-  --card: oklch(0.1 0 0 / 0.3);
+  --card: oklch(0.1 0 0);
   --card-foreground: oklch(0.98 0 0);
-  /* Making popover backgrounds transparent */
-  --popover: oklch(0.08 0 0 / 0.4);
+  --popover: oklch(0.08 0 0);
   --popover-foreground: oklch(0.98 0 0);
   --primary: oklch(0.75 0.15 85);
   --primary-foreground: oklch(0.05 0 0);
-  /* Making secondary backgrounds transparent */
-  --secondary: oklch(0.15 0 0 / 0.4);
+  --secondary: oklch(0.15 0 0);
   --secondary-foreground: oklch(0.98 0 0);
   --muted: oklch(0.2 0 0);
   --muted-foreground: oklch(0.6 0 0);
@@ -33,12 +30,11 @@
   --chart-4: oklch(0.65 0.13 75);
   --chart-5: oklch(0.55 0.11 65);
   --radius: 0.75rem;
-  /* Making sidebar backgrounds transparent */
-  --sidebar: oklch(0.08 0 0 / 0.5);
+  --sidebar: oklch(0.08 0 0);
   --sidebar-foreground: oklch(0.98 0 0);
   --sidebar-primary: oklch(0.75 0.15 85);
   --sidebar-primary-foreground: oklch(0.05 0 0);
-  --sidebar-accent: oklch(0.15 0 0 / 0.4);
+  --sidebar-accent: oklch(0.15 0 0);
   --sidebar-accent-foreground: oklch(0.98 0 0);
   --sidebar-border: oklch(0.25 0 0);
   --sidebar-ring: oklch(0.75 0.15 85);
@@ -58,16 +54,13 @@
 .dark {
   --background: oklch(0.05 0 0);
   --foreground: oklch(0.98 0 0);
-  /* Making card backgrounds transparent in dark mode */
-  --card: oklch(0.1 0 0 / 0.3);
+  --card: oklch(0.1 0 0);
   --card-foreground: oklch(0.98 0 0);
-  /* Making popover backgrounds transparent in dark mode */
-  --popover: oklch(0.08 0 0 / 0.4);
+  --popover: oklch(0.08 0 0);
   --popover-foreground: oklch(0.98 0 0);
   --primary: oklch(0.75 0.15 85);
   --primary-foreground: oklch(0.05 0 0);
-  /* Making secondary backgrounds transparent in dark mode */
-  --secondary: oklch(0.15 0 0 / 0.4);
+  --secondary: oklch(0.15 0 0);
   --secondary-foreground: oklch(0.98 0 0);
   --muted: oklch(0.2 0 0);
   --muted-foreground: oklch(0.6 0 0);
@@ -83,12 +76,11 @@
   --chart-3: oklch(0.5 0.1 60);
   --chart-4: oklch(0.65 0.13 75);
   --chart-5: oklch(0.55 0.11 65);
-  /* Making sidebar backgrounds transparent in dark mode */
-  --sidebar: oklch(0.08 0 0 / 0.5);
+  --sidebar: oklch(0.08 0 0);
   --sidebar-foreground: oklch(0.98 0 0);
   --sidebar-primary: oklch(0.75 0.15 85);
   --sidebar-primary-foreground: oklch(0.05 0 0);
-  --sidebar-accent: oklch(0.15 0 0 / 0.4);
+  --sidebar-accent: oklch(0.15 0 0);
   --sidebar-accent-foreground: oklch(0.98 0 0);
   --sidebar-border: oklch(0.25 0 0);
   --sidebar-ring: oklch(0.75 0.15 85);
