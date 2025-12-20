@@ -5,7 +5,6 @@ import { useRouter, useParams } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Clock, Users, CheckCircle, Star, ChevronLeft, ChevronRight } from "lucide-react"
 import { useLanguage } from "@/lib/language-context"
-import { translations } from "@/lib/i18n"
 
 interface Excursion {
   id: string
@@ -20,17 +19,17 @@ interface Excursion {
 }
 
 interface ExcursionDetailPageClientProps {
-  excursion: Excursion
-  translations: any
+  excursions: Excursion[]
 }
 
-export default function ExcursionDetailPageClient({ excursion, translations: _ }: ExcursionDetailPageClientProps) {
+export default function ExcursionDetailPageClient({ excursions }: ExcursionDetailPageClientProps) {
   const router = useRouter()
   const params = useParams()
   const excursionId = params.id as string
   const { locale } = useLanguage()
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
-  const t = translations[locale]
+
+  const excursion = excursions.find((e) => e.id === excursionId)
 
   if (!excursion) {
     return (

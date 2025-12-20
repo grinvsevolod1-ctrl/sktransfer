@@ -133,7 +133,7 @@ async function getExcursions(locale: Locale): Promise<Excursion[]> {
             ? "Discover the main attractions of Belarus capital. See Independence Avenue, Trinity Suburb, Upper Town and much more."
             : "探索白俄罗斯首都的主要景点。参观独立大道、三一郊区、上城等。",
       duration: locale === "ru" ? "3 часа" : locale === "en" ? "3 hours" : "3小时",
-      groupSize: locale === "ru" ? "до 15 человек" : locale === "en" ? "up to 15 people" : "最多15人",
+      groupSize: locale === "ru" ? "до 15 человек" : locale === "en" ? "up to 15 people" : "最多15��",
       price: locale === "ru" ? "по согласованию" : locale === "en" ? "by agreement" : "价格协商",
       images: [
         "/minsk-city-tour-architecture.jpg",
@@ -423,11 +423,5 @@ export default async function ExcursionPage({
   const locale = (searchParams.lang as Locale) || "ru"
   const excursions = await getExcursions(locale)
 
-  const excursion = excursions.find((e) => e.id === params.id)
-
-  if (!excursion) {
-    return <div>Excursion not found</div>
-  }
-
-  return <ExcursionDetailPageClient excursion={excursion} translations={translations} />
+  return <ExcursionDetailPageClient excursions={excursions} />
 }

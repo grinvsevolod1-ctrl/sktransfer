@@ -45,7 +45,7 @@ export function BookingModal({ open, onClose, locale, selectedTariff, distance, 
       }
 
       if (selectedTariff) {
-        message += `\n\n${locale === "ru" ? "Тариф" : locale === "en" ? "Tariff" : "关税"}: ${selectedTariff}`
+        message += `\n\n${locale === "ru" ? "Т��риф" : locale === "en" ? "Tariff" : "关税"}: ${selectedTariff}`
       }
 
       if (distance) {
